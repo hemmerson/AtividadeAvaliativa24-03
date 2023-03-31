@@ -20,10 +20,11 @@ public class Venda {
     String dados(){
         String itens="";
         for (Item i:item) {
-            itens = itens+""+i.dados();
+            itens = itens+i.dados();
         }
         return "Data: "+data.getDayOfMonth()+"/"+data.getMonthValue()+"/"+data.getYear()+"\n"+
-                "Hora: "+data.getHour()+":"+data.getMinute()+"\n"+
+                "Hora: "+data.getHour()+":"+data.getMinute()+"\n" +
+                "------------------------\n"+
                 itens+"\n"+
                 "Total Venda: "+String.format("R$ %.2f",total());
     }

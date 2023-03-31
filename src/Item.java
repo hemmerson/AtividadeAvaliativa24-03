@@ -3,7 +3,7 @@
  * on date 24/03/2023
  */
 public class Item {
-    double quantidade;
+    int quantidade;
     Produto produto;
 
     double total(){
@@ -13,7 +13,8 @@ public class Item {
     String dados(){
         return produto.dados()+
                 "Quantidade: "+quantidade+"\n"+
-                "Total: "+total()+"\n";
+                "Total: "+String.format("R$ %.2f", total())+"\n" +
+                "------------------------\n";
     }
 
 }
