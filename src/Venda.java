@@ -9,6 +9,11 @@ public class Venda {
     LocalDateTime data;
     ArrayList<Item> item;
 
+    /**
+     * Método que retorna o valor total da venda, de acordo com os itens
+     * cadastrados na venda
+     * @return valor total da venda
+     */
     double total(){
         double total = 0;
         for (Item i:item) {
@@ -17,6 +22,10 @@ public class Venda {
         return total;
     }
 
+    /**
+     * Método que retorna uma String com os dados da venda realizada
+     * @return data e hora da venda, jutamente com os itens vendidos e valor total da venda
+     */
     String dados(){
         String itens="";
         for (Item i:item) {
