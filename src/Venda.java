@@ -24,7 +24,7 @@ public class Venda {
 
     /**
      * Método que retorna uma String com os dados da venda realizada
-     * @return data e hora da venda, jutamente com os itens vendidos e valor total da venda
+     * @return data e hora da venda, juntamente com os itens vendidos e valor total da venda
      */
     String dados(){
         String itens="";
